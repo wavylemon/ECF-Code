@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    position: fixed;
+    height: auto;
+    left: 0px;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+}
+
+@media (max-width: 991px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .logo-2 {
+        display: none;
+    }
+}
+
+.navbar {
+    background: rgb(21, 104, 17);
+    padding: 1rem 8rem;
+    z-index: 1000;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+    color: rgb(85, 157, 81);
+}
+
+#navbarSupportedContent > button {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+}
+
+#navbarSupportedContent > button:hover {
+    background-color: rgb(49, 144, 44);
+    border-color: rgb(85, 157, 81);
+}
+
+.mid {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.mid video {
+    width: 100%;
+    height: 100vh;
+    pointer-habitats: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mid .hero {
+    position: relative;
+}
+
+.mid .hero p {
+    width: 55%;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.about .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.about .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.about .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.about .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.discover .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.discover .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.discover .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.discover .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.discover .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.habitats-header {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.habitats .one {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.habitats .card {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.btn {
+    background: rgb(21, 104, 17);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    border-color: rgb(21, 104, 17);
+}
+
+.btn:hover {
+    background-color: rgb(85, 157, 81);
+    border-color: rgb(85, 157, 81);
+}
+
+/* habitats page styling */
+
+.savannah .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.savannah .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.savannah .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.savannah .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.savannah .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.jungle .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.jungle .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.jungle .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.jungle .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.jungle .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.marshlands .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.marshlands .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.marshlands .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.marshlands .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.marshlands .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Visit Page Style */
+
+.guided-tour .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.guided-tour .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.guided-tour .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.guided-tour .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.guided-tour .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.jungle-train .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.jungle-train .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.jungle-train .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.jungle-train .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.jungle-train .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.feed .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.feed .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.feed .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.feed .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.feed .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.dining .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.dining .text h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.dining .text h2 {
+    color: rgb(21, 104, 17);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.dining .text p {
+    color: grey;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.dining .text a {
+    background: rgb(85, 157, 81);
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 988px) {
+    .navbar {
+        padding: 1rem;
+    }
+}
